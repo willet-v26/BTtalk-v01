@@ -3,7 +3,7 @@
 www.bttalk.pl/old/index.html
 
 ### General info:
-Language school website 2018
+2018 | Language school website
 	
 ### Technologies:
 Project is created with:
