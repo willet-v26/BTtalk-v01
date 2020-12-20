@@ -8,7 +8,7 @@ www.bttalk.pl/old/index.html
 ### Technologies:
 Project is created with:
 * Html
-* CSS
+* Css
 * Jade
 * Sass
 * JavaScript
