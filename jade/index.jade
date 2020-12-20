@@ -1,0 +1,37 @@
+//output:../index.html, pretty:false
+//- //output:../index.html
+
+//- Komenda kompilacji pięknej/niepięknej wersji html- musi być na samej górze
+//- --------------------------------
+
+doctype html
+html(lang="pl")
+  head
+    include ../jade/includes/head.jade
+    include ../json/google-logo.json
+    //- cookie scripts
+    script(src="http://code.jquery.com/jquery-1.9.1.min.js")
+    script(src="js/cookie.js")
+
+  body(data-spy="scroll", data-target="#myScrollspy", data-offset="10")
+    // Moje wstawki
+    include ../jade/includes/TagManager-2nd.jade
+    include ../jade/includes/scroll-indicator.jade
+    include ../jade/includes/sidebar.jade
+    include ../jade/includes/start.jade
+    include ../jade/includes/idea.jade
+    include ../jade/includes/dlaczego-my&nasze-atuty.jade
+    include ../jade/includes/lektorzy.jade
+    include ../jade/includes/oferta-merci.jade
+    include ../jade/includes/oferta.jade
+    include ../jade/includes/kursy.jade
+    include ../jade/includes/aktualnosci.jade
+    include ../jade/includes/plan-zajec.jade
+
+    //- all scripts JS
+    include ../jade/includes/all-scripts-js.jade
+    footer
+      include ../jade/includes/mapa-google.jade
+      include ../jade/includes/kontakt.jade
+  //- end body, cookie wstawiany za body
+  include ../jade/includes/cookie_PE.jade

@@ -1,0 +1,51 @@
+p.carousel_text
+  text-align: center
+  font-size: 14px
+
+p.carousel_text2
+  text-align: center
+  font-size: 12px
+
+.carousel-control
+  .glyphicon-chevron-left, .glyphicon-chevron-right, .fa-angle-left, .fa-angle-right, .icon-next, .icon-prev
+    position: absolute
+    top: calc(50% - 17.5px)
+    font-size: 35px
+    z-index: 5
+    display: inline-block
+
+.carousel-inner
+  border-top: 8px solid
+  border-bottom: 8px solid
+
+// tekst opinii
+.carousel-inner.bez-linii
+  border-top: 0px solid
+  border-bottom: 0px solid
+  .carousel-caption
+    text-shadow: none
+    .carousel_text
+      font-size: 14px
+      font-style: italic
+
+// carousel- dzieciaki
+.carousel-inner.dzieciaki
+  border-top: 0px solid
+  border-bottom: 0px solid
+
+
+@media screen and (max-width: 767px)
+  #myCarousel.carousel.slide
+    display: none
+
+@media (max-width: 991px) and (min-width: 768px)
+  #myCarousel.carousel.slide
+    display: none
+
+@media (max-width: 1199px) and (min-width: 992px)
+  .single
+    display: none
+
+@media (min-width: 1200px)
+  .single
+    display: none

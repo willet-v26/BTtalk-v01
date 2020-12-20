@@ -1,0 +1,174 @@
+.container-fluid#section0
+  .row#start(style="padding-left: 0; padding-right: 0;")
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
+      button.btn.btn-primary.button-change-color(type='button') Zmiana kolorystyki
+      //- button.button-change-color(title="Zmiana kolorystyki") Toggle class
+      .navigation
+        span(style="padding-right: 91px;")
+          a(href="#idea", title="W dół")
+            i.fa.fa-arrow-circle-down.navigation-icon
+    .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2
+    .col-xs-12.col-sm-12.col-md-12.col-lg-8.col-xl-8
+      ul.list-unstyled.list-start
+        li.phone
+          i.fa.fa-phone-square 
+          | 
+          | +48 605 593 448
+        li.envelop
+          i.fa.fa-envelope-square 
+            a(href="mailto:info@bttalk.pl", title="wyślij wiadomość")
+              | 
+              | info@bttalk.pl
+        li.facebook
+          i.fa.fa-facebook-square 
+            | 
+            a(href="https://www.facebook.com/bttalk.wro", target="_blank", title="jesteśmy też tutaj!")
+              | facebook
+      .jumbotron
+        h1.display-3 BT
+        p.lead(style="font-size: 16.7px; padding-left: 5px; margin-top: -10px;") Trochę inna szkoła językowa
+        .spinner.spinner-1
+          .icon-dymek
+        .slup-ogloszeniowy
+        .icon-02-kierunek
+        .ludziki
+          .floating-box.icon-ludz-01
+          .floating-box.icon-ludz-02
+          .floating-box.icon-ludz-03
+          .floating-box.icon-ludz-04
+          .floating-box.icon-ludz-05
+          .floating-box.icon-ludz-06
+          .floating-box.icon-ludz-08
+          .floating-box.icon-ludz-09
+          .floating-box.icon-ludz-10
+          .floating-box.icon-ludz-11
+          .floating-box.icon-ludz-12
+          .floating-box.icon-ludz-14
+          .floating-box.icon-ludz-15
+          .floating-box.icon-ludz-13
+          .floating-box.icon-ludz-07
+          .floating-box.icon-ludz-16
+        
+    .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2
+
+    //- .col-xs-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
+      .navigation
+        span
+          a(href="#aktualnosci", title="W dół")
+            i.fa.fa-arrow-circle-down.navigation-icon
+        span
+          a(href="#start", title="W górę")
+            i.fa.fa-arrow-circle-up.navigation-icon
+    //- .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.col-xl-12(style="margin: 0; padding: 0;")
+      //- h2 Naglowek karuzeli
+      //- |   
+      #myCarousel.carousel.slide(data-ride="carousel")
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel", data-slide-to="0")
+          |       
+          li(data-target="#myCarousel", data-slide-to="1")
+          |       
+          li(data-target="#myCarousel", data-slide-to="2")
+          |       
+          li(data-target="#myCarousel", data-slide-to="3")
+          |       
+          li(data-target="#myCarousel", data-slide-to="4")
+          |       
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            img(src="img/d03.jpg", alt="", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Droga do celu
+              p.carousel_text Zawsze wiemy co i w jaki sposób chcemy osiągnąć na koniec każdego kursu
+          |       
+          .item
+            img(src="img/d02.jpg", alt="", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Atmosfera
+              p.carousel_text Niebanalny nastrój podczas nauki o przyziemnych pojęciach
+          |     
+          .item
+            img(src="img/d01.jpg", alt="", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Konwersacje indywidualne
+              p.carousel_text Zawsze dopasowane do potrzeb nawet najbardziej wymagającego klienta
+          |     
+          .item
+            img(src="img/d04.jpg", alt="", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Relaksująca forma zajęć
+              p.carousel_text Tylko w bezstresowej i przyjemnej formie chłoniemy wiedzę
+          |     
+          .item
+            img(src="img/d05.jpg", alt="", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Oczekiwania
+              p.carousel_text Choć stwarzamy świetne warunki do nauki, to cuda zdarzają się tylko dzięki Twemu zaangażowaniu
+          |     
+        // Left and right controls
+        //- a.left.carousel-control(href="#myCarousel", data-slide="prev")
+        //-   span.fa.fa-angle-left
+        //-   |       
+        //-   span.sr-only Previous
+        //- |     
+        //- a.right.carousel-control(href="#myCarousel", data-slide="next")
+        //-   span.fa.fa-angle-right
+        //-   |       
+        //-   span.sr-only Next
+      #myCarousel2.carousel.slide.single(data-ride="carousel")
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel2", data-slide-to="0")
+          |       
+          li(data-target="#myCarousel2", data-slide-to="1")
+          |       
+          li(data-target="#myCarousel2", data-slide-to="2")
+          |       
+          li(data-target="#myCarousel2", data-slide-to="3")
+          |       
+          li(data-target="#myCarousel2", data-slide-to="4")
+          |       
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            img(src="img/01.jpg", alt="Konwersacje indywidualne", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Konwersacje indywidualne
+              p.carousel_text2 Zawsze dopasowane do potrzeb nawet najbardziej wymagającego klienta
+          |       
+          .item
+            img(src="img/02.jpg", alt="Atmosfera", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Droga do celu
+              p.carousel_text2 Zawsze wiemy co i w jaki sposób chcemy osiągnąć na koniec każdego kursu
+          |     
+          .item
+            img(src="img/03.jpg", alt="Droga do celu", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Droga do celu
+              p.carousel_text2 Zawsze wiemy co i w jaki sposób chcemy osiągnąć na koniec każdego kursu
+          |     
+          .item
+            img(src="img/04.jpg", alt="Relaksująca forma zajęć", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Relaksująca forma zajęć
+              p.carousel_text2 Tylko w bezstresowej i przyjemnej formie chłoniemy wiedzę
+          .item
+            img(src="img/05.jpg", alt="Oczekiwania", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Oczekiwania
+              p.carousel_text2 Choć stwarzamy świetne warunki do nauki, to cuda zdarzają się tylko dzięki Twemu zaangażowaniu
+          |     

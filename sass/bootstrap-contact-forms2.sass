@@ -1,0 +1,107 @@
+.form-horizontal .form-group
+  margin-right: 0px
+  margin-left: 0px
+
+a
+  color: transparent
+  text-decoration: none
+  // odpowiedzialny za zmiane kolorow w sidebar
+  // color: $blue
+  &:hover, &:focus
+    color: $blue
+    text-decoration: underline
+
+// kolor w formularzu- po wpisaniu wlasciwego adresu
+input:-webkit-autofill, select:-webkit-autofill
+  background-color: rgb(250, 255, 189)
+  background-image: none
+  color: rgb(0, 0, 0)
+
+textarea:-webkit-autofill
+  background-color: rgb(250, 255, 189)
+  background-image: none
+  color: rgb(0, 0, 0)
+
+textarea.form-control
+  height: auto
+  width: 100% !important
+  min-height: 34px !important
+  &:focus
+    background-color: rgb(250, 255, 189)
+    background-image: none
+    color: rgb(0, 0, 0)
+
+input:focus, textarea:focus, select:focus
+  outline-offset: -2px
+  // &:focus
+  //   background-color: rgb(250, 255, 189)
+  //   background-image: none
+  //   color: rgb(0, 0, 0)
+
+// button potwierdzajacy wyslanie
+.btn-default
+  font-family: sans-serif
+  font-size: 16px
+  // font-weight: bold
+  color: $white
+  background-color: $bg
+  border-color: $white
+  width: 100%
+  &:hover
+    color: $bg
+    // background-color: #f47e50
+    background-color: $white
+    border-color: $white
+  &:active
+    color: $white
+    background-color: $blue
+    border-color: $white
+  &:focus
+    color: $white
+    background-color: $blue
+    border-color: $white
+
+.btn-default:active
+  &:focus, &:hover
+    color: $white
+    background-color: $blue
+    border-color: $white
+
+// -------------------------------
+// navbar
+// -------------------------------
+.nav-pills > li.active > a
+  color: $white
+  background-color: transparent
+  &:focus, &:hover
+    color: $white
+    background-color: transparent
+
+.nav > li > a
+  &:focus, &:hover
+    text-decoration: none
+    background-color: #white
+  position: relative
+  /* display: block;
+  padding: 0px 15px
+
+a
+  // color: $bg
+  text-decoration: none
+
+.nav > li > a
+  position: relative
+  display: block
+  padding: 0px 15px
+
+.nav-stacked > li + li
+  margin-top: 0px
+
+.nav > li > a
+  &:focus, &:hover
+    text-decoration: none
+    background-color: transparent
+
+@media screen and (max-width: 767px)
+  .form-horizontal
+    margin-top: 20px

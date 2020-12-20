@@ -1,0 +1,68 @@
+.container-fluid#section0
+  .row#carousel(style="height: 100vh; padding: 0;")
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.col-xl-12
+      .navigation
+        span
+          a(href="#aktualnosci", title="W dół")
+            i.fa.fa-arrow-circle-down.navigation-icon
+        span
+          a(href="#start", title="W górę")
+            i.fa.fa-arrow-circle-up.navigation-icon
+    //- .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12.col-xl-12(style="margin: 0; padding: 0;")
+      h2 Naglowek karuzeli
+      |   
+      #myCarousel.carousel.slide(data-ride="carousel")
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel", data-slide-to="0")
+          |       
+          li(data-target="#myCarousel", data-slide-to="1")
+          |       
+          li(data-target="#myCarousel", data-slide-to="2")
+          |       
+          li(data-target="#myCarousel", data-slide-to="3")
+        // Wrapper for slides
+        .carousel-inner
+          .item.active
+            img(src="img/slide01-1171x500.jpg", alt="Scotland", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Scotland
+              |           
+              p.carousel_text Scotland is always on my mind!
+          |       
+          .item
+            img(src="img/slide02-1171x500.jpg", alt="Scotland", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Edinburgh
+              |           
+              p.carousel_text Thank you: father, mother & grandmother for invitation to the Christmas!
+          |     
+          .item
+            img(src="img/slide03-1171x500.jpg", alt="Edinburgh", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Edinburgh
+              |           
+              p.carousel_text We love windy weather and rain!
+          |     
+          .item
+            img(src="img/slide04-1171x500.jpg", alt="Scotland", style="width:100%;")
+            |         
+            .carousel-caption
+              h3 Edinburgh
+              |           
+              p.carousel_text We love all gifts!
+        // Left and right controls
+        //- a.left.carousel-control(href="#myCarousel", data-slide="prev")
+        //-   span.fa.fa-angle-left
+        //-   |       
+        //-   span.sr-only Previous
+        //- |     
+        //- a.right.carousel-control(href="#myCarousel", data-slide="next")
+        //-   span.fa.fa-angle-right
+        //-   |       
+        //-   span.sr-only Next
+    //- .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2

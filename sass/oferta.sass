@@ -1,0 +1,73 @@
+// *************************************
+// Cennik
+// *************************************
+table
+  border: 1px solid $red2
+  border-radius: 5px
+  transition: box-shadow 0.5s
+  margin-bottom: 20px
+  background-color: #fff
+  box-shadow: 0 1px 1px $box-shadow
+  border-spacing: 2px
+  border-collapse: inherit
+  &:hover
+    box-shadow: 5px 0px 40px $box-shadow
+  tbody
+
+td.name01
+  color: $white
+  background-color: $red2
+  padding: 10px
+  // border-bottom: 1px solid transparent
+  // border-top-left-radius: 0px
+  // border-top-right-radius: 0px
+  // border-bottom-left-radius: 0px
+  // border-bottom-right-radius: 0px
+  text-align: center
+
+td.name02
+  color: $black
+  border-left: 0px solid
+td.name03
+  background-color: #d3d3d3a8
+  border-left: 1px solid lightgray
+  text-align: center
+  color: $black
+  // border-bottom-right-radius: 3px
+  // border-bottom-left-radius: 3px
+
+td
+  padding: 0px 10px
+  color: $black
+  text-align: inherit
+h1
+  font-size: 25px
+  margin-top: 0px
+  margin-bottom: 0px
+h3
+  font-size: 30px
+  margin-top: 10px
+  margin-bottom: 0px
+h4
+  color: #adabab
+  font-size: 14px
+
+p
+  margin: 0 0 0px
+
+// -------------------------------------------------------
+// @media screen and (max-width: 375px)
+//
+@media screen and (max-width: 767px)
+  h1
+    font-size: 140%
+
+@media (max-width: 1199px) and (min-width: 992px)
+  h1
+    font-size: 163%
+
+@media screen and (max-width: 1350px)
+  .table-01
+    margin-top: 15px !important
+  .ludziki4
+    top: -35px !important

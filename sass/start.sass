@@ -1,0 +1,124 @@
+ul.list-unstyled.list-start
+  float: left
+  font-size: 16px
+  font-weight: normal
+  padding-top: 0px
+  padding-left: 7px
+  padding-bottom: 0
+  margin-bottom: 0
+  // float: right
+  // font-size: 16px
+  // font-weight: normal
+  // padding-top: 28px
+  li a
+    // font-family: 'Noto Sans', sans-serif
+    text-decoration: none
+    color: $white
+    &:hover
+      text-decoration: underline
+      color: $white
+
+ul.list-unstyled.list-facebook
+  li a
+    text-decoration: none
+    color: $white
+    &:hover
+      text-decoration: underline
+      color: $white
+
+.grafika
+  // float: right
+  // position: absolute
+  // top: 20px
+  // right: 0
+  width: 100%
+  z-index: 10
+  margin-top: 50px
+  img
+    width: 100%
+
+.display-3
+  font-size: 86px !important
+  margin-top: 54px
+  font-weight: 600
+
+// .container-fluid .jumbotron
+//   padding: 2rem 0rem
+//   margin-bottom: 13rem
+//   background-color: transparent
+
+.lead
+    margin-bottom: 0px
+    font-size: 16px
+
+.container-fluid .jumbotron
+  // padding: 2rem 0rem 0 0
+  padding: 1.2rem 0rem 0 0
+  margin-bottom: 0
+  background-color: transparent
+
+.jumbotron2
+  // padding: 2rem 0rem
+  // margin-bottom: 3rem
+  background-color: transparent
+  position: absolute
+  top: 260px
+  right: 5px
+
+.akapit1, .akapit2
+  padding: 10px
+  border: 1px solid $white
+  border-left: 8px solid $white
+  margin-bottom: 30px
+  &:hover
+    background-color: $white
+    color: $bg
+  a
+    color: $blue
+    &:hover
+      color: $blue
+
+.akapit3
+  padding: 10px
+  border: 0px solid $white
+  margin-bottom: 30px
+
+.akapit4
+  padding: 10px
+  border: 1px solid $white
+  border-left: 8px solid $white
+  margin-bottom: 30px
+  &:hover
+    background-color: $white
+    color: $bg
+  a
+    color: $blue
+    &:hover
+      color: $blue
+
+@media screen and (max-width: 375px)
+  #start
+    margin-right: 0px
+
+@media screen and (max-width: 767px)
+  #start
+    height: 100%
+  .grafika
+    display: none
+
+@media (max-width: 991px) and (min-width: 768px)
+  #start
+    height: 100%
+  .grafika
+    display: none
+
+
+@media (max-width: 1199px) and (min-width: 992px)
+  #start
+    height: 100%
+  .grafika
+    right: 40px
+
+@media (min-width: 1200px)
+  #start
+    height: 100vh

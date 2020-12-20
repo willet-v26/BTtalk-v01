@@ -1,0 +1,93 @@
+// ************************************
+// sidebar
+// ************************************
+.fa-circle
+  width: 20px
+  height: 20px
+  border: 2px solid $white
+  border-radius: 50%
+  &:hover
+    color: $blue
+
+.sidebar
+  position: fixed
+  top: 0px
+  bottom: 0px
+  right: 0px
+  -webkit-transition: all 0.15s ease-out 0
+  -moz-transition: all 0.15s ease-out 0
+  transition: all 0.15s ease-out 0
+  width: 40px
+  line-height: 30px
+  padding-top: calc(50vh - 330px/2)
+  padding-right: 50px
+  // background: rgba(241, 241, 241, 0.28)
+  z-index: 5
+  .sidebar ul
+    list-style: none
+    margin: 0
+  .sidebar li
+    color: black
+    font-size: 16px
+    margin: 0
+    margin-bottom: 16px
+    -webkit-font-smoothing: antialiased
+    cursor: pointer
+    .sidebar li:hover
+      color: green
+
+a.bar
+  // color: transparent
+  font-size: 18px
+  text-decoration: none
+
+.list-unstyled.list-sidebar
+  padding-left: 5px
+  // margin-left: 10px
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans)
+
+.tooltip
+  position: relative
+  display: inline-block
+  opacity: 1
+  .tooltiptext
+    font-family: 'Noto Sans', sans-serif
+    visibility: hidden
+    width: 120px
+    background-color: $blue
+    color: $white
+    text-align: center
+    border-radius: 4px
+    padding: 3px 0px 5px 0px
+    position: absolute
+    top: -4px
+    right: 25px
+    z-index: 1
+    /* left: 50%; */
+    // bottom: 125%
+    // left: 50%
+    margin-left: 0px
+    // margin-left: -60px
+    opacity: 0
+    transition: opacity 1s
+    &::after
+      content: ""
+      position: absolute
+      top: 100%
+      left: 50%
+      margin-left: -5px
+      border-width: 5px
+      border-style: solid
+      border-color: transparent transparent transparent transparent
+  &:hover .tooltiptext
+    visibility: visible
+    opacity: 1
+
+@media screen and (max-width: 375px)
+  .sidebar
+    position: fixed
+
+@media (max-width: 991px) and (min-width: 768px)
+  .sidebar
+    position: fixed

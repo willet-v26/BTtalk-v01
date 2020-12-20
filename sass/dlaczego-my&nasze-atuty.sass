@@ -1,0 +1,106 @@
+#section3
+  .row
+    height: 100vh
+/* -------------------------------------
+ * dlaczego-my
+ * ------------------------------------- */
+#timeline-dlaczego-my
+  list-style: none
+  margin: 0px 0px 0px 0px
+  padding-top: 0
+  padding-left: 0
+  padding-bottom: 100px
+  border-left: 0px solid $white
+  border-right: 8px solid $white
+  height: 100%
+
+ul.dlaczego-my
+  list-style: none
+  padding-left: 22px
+  #timeline
+    margin: 0px 0 0px 0px
+    border-right: 0px solid $white
+    border-left: 8px solid $white
+    margin-left: -38px
+  li
+    font-size: 13px
+    text-align: justify
+    // border: 1px solid
+    padding: 3px
+    // background-color: $blue
+    margin-bottom: 5px
+    list-style-type: decimal-leading-zero
+
+#timeline-dlaczego-my2
+  list-style: none
+  margin: 0px 0px 0px 0px
+  padding-top: 0
+  padding-left: 0
+  padding-bottom: 100px
+  border-left: 0px solid $white
+  border-right: 8px solid $white
+  margin-left: -38px
+  height: 100%
+
+@media screen and (max-width: 767px)
+  ul.dlaczego-my
+    padding-left: 20px
+    padding-bottom: 20px
+  #timeline ul
+    border-right: 0px
+    border-left: 0px
+    margin-left: 0px
+  #timeline li
+    margin: 10px 0px 0px 0px
+    padding-right: 0px
+    padding-left: 0px
+    position: relative
+    text-align: justify
+
+/* -------------------------------------
+ * nasze-atuty
+ * ------------------------------------- */
+.content.atuty
+  &:after
+    border-right-color: transparent
+
+#timeline-nasze-atuty
+  list-style: none
+  margin: 0px 0px 0px 0px
+  padding-top: 0
+  padding-left: 0
+  padding-bottom: 100px
+  border-left: 0px solid $white
+  border-right: 8px solid $white
+  margin-left: -38px
+  height: 100%
+  ul
+    list-style: none
+    padding-left: 0px
+    #timeline
+      margin: 0px 0 0px 0px
+      border-right: 8px solid $white
+      border-left: 0px
+      margin-left: -38px
+
+@if $vertical
+  @media screen and (max-width: 767px)
+    .content.atuty
+      &:after
+        border-bottom-color: $bg
+        border-right-color: transparent
+
+@media (max-width: 991px) and (min-width: 768px)
+  #section3
+    .row
+      height: 100%
+
+@media (max-width: 1199px) and (min-width: 992px)
+  #section3
+    .row
+      height: 100%
+
+@media (min-width: 1200px)
+  #section3
+    .row
+      height: 100vh

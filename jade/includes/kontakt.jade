@@ -1,0 +1,80 @@
+.container-fluid#section9
+  .row#kontakt(style="padding-top: 40px;")
+    .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2
+    //- .col-xs-6.col-sm-3.col-md-3.col-lg-2.col-xl-2
+    .col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+      h2(style="margin-top: 0px;") Kontakt
+      ul.list-unstyled.list-footer
+        li.user
+          i.fa.fa-user
+          |  Olla:
+        li.phone
+          i.fa.fa-phone-square
+          |  +48 605 593 448
+        li.envelop
+          i.fa.fa-envelope-square
+            a(href="mailto:info@bttalk.pl" title="wyślij wiadomość")
+              |  info@bttalk.pl
+      ul.list-unstyled.list-footer
+        li.user
+          i.fa.fa-user
+          |  Bartek:
+        li.phone
+          i.fa.fa-phone-square
+          |  +48 513 687 251
+        li.envelop
+          i.fa.fa-envelope-square
+            a(href="mailto:bartek@bttalk.pl" title="wyślij wiadomość")
+              |  bartek@bttalk.pl
+      ul.list-unstyled.list-footer
+        li.facebook
+          i.fa.fa-facebook-square
+            a(href="https://www.facebook.com/bttalk.wro" target="_blank" title="jesteśmy też tutaj!")
+              |  facebook
+      //- ul(style="margin-right: 30px; border-right: 1px solid;") #[strong Mapa strony:]
+      //- ul #[strong Mapa strony:]
+      //-   li
+      //-     a(href="#start" title="Start") Start
+      //-   li
+      //-     a(href="#idea" title="Idea") Idea
+      //-   li
+      //-     a(href="#dlaczego-my" title="Dlaczego my?") Dlaczego my?
+      //-   li
+      //-     a(href="#nasze-atuty" title="Nasze atuty") Nasze atuty
+      //-   li
+      //-     a(href="#lektorzy" title="lektorzy") Lektorzy
+      //-   li
+      //-     a(href="#oferta" title="Oferta cenowa") Oferta cenowa
+      //-   li
+      //-     a(href="#kursy" title="Kursy") Kursy
+      //-   li
+      //-     a(href="#aktualnosci" title="Aktualności") Aktualności
+      //-   li
+      //-     a(href="#plan-zajec" title="Plan zajeć") Plan zajeć
+      //-   li
+      //-     a(href="#mapa" title="Mapa") Gdzie uczymy?
+      //-   li
+      //-     a(href="#kontakt" title="Kontakt") Kontakt
+    .col-xs-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+      .ludziki7
+        .floating-box.icon-ludz-03
+        .floating-box.icon-ludz-14
+        .floating-box.icon-ludz-15
+        .floating-box.icon-ludz-11
+        .floating-box.icon-ludz-10
+      form.form-horizontal(action="mail.php" method="post")
+        .form-group
+          label.control-label(for="name")
+          input#usr.form-control(placeholder="Wpisz imię i nazwisko", name="name", required="")
+        .form-group
+          label.control-label(for="email")
+          input#email.form-control(placeholder="Wpisz email", name="email", required="")
+        .form-group
+          label.control-label(for="comment")
+          textarea#comment.form-control(placeholder="Wpisz wiadomość", name="Wiadomość", rows="5", required="")
+        .form-group
+          button.btn.btn-default(type="submit") Wyślij
+
+      p.copyright Copyright © 2016-2019 BTtalk | Projekt: 
+        a(href="http://p-evolution.pl" target="_blank") P: E
+    .col-xs-12.col-sm-12.col-md-12.col-lg-2.col-xl-2

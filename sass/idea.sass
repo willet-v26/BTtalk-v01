@@ -1,0 +1,111 @@
+#idea
+  height: 100vh
+
+ul.list-unstyled.list-start
+  float: left
+  font-size: 16px
+  font-weight: normal
+  padding-top: 0px
+  padding-left: 7px
+  padding-bottom: 0
+  margin-bottom: 0
+  // float: right
+  // font-size: 16px
+  // font-weight: normal
+  // padding-top: 28px
+  li a
+    // font-family: 'Noto Sans', sans-serif
+    text-decoration: none
+    color: $white
+    &:hover
+      text-decoration: underline
+      color: $white
+
+// .container-fluid .jumbotron
+//   padding: 2rem 0rem
+//   margin-bottom: 13rem
+//   background-color: transparent
+
+.lead
+    margin-bottom: 0px
+    font-size: 16px
+
+.container-fluid .jumbotron
+  padding: 2rem 0rem 0 0
+  margin-bottom: 0
+  background-color: transparent
+
+.jumbotron2
+  // padding: 2rem 0rem
+  // margin-bottom: 3rem
+  background-color: transparent
+  position: absolute
+  top: 260px
+  right: 5px
+
+.akapit1, .akapit2
+  padding: 10px
+  border: 1px solid $white
+  border-left: 8px solid $white
+  margin-bottom: 30px
+  &:hover
+    background-color: $white
+    color: $bg
+  a
+    color: $blue
+    &:hover
+      color: $blue
+
+.akapit3
+  padding: 10px
+  padding-top: 0
+  border: 0px solid $white
+  margin-bottom: 30px
+  .big-font
+    font-size: 29px
+    font-weight: 600
+    color: #eee9dcd4
+
+
+img.img-idea
+  width: 100%
+  display: block
+  margin: auto
+  padding-top: 20px
+
+@media screen and (max-width: 767px)
+  #idea
+    height: 100%
+  .akapit2
+    margin-top: 25px
+  .ludziki11
+    top: -25px !important
+
+@media (max-width: 991px) and (min-width: 768px)
+  #idea
+    height: 100%
+  img.img-idea
+    width: auto
+  .ludziki9
+    top: -270px
+    transform: scale(.8)
+
+@media (max-width: 1199px) and (min-width: 992px)
+  #idea
+    height: 100%
+  img.img-idea
+    width: auto
+
+@media (max-width: 1199px)
+  .hide-people
+    display: none
+
+@media (min-width: 1200px)
+  #idea
+    height: 100vh
+  img.img-idea
+    width: auto
+  .ludziki9
+    position: absolute
+    top: -110px
+    transform: scale(.8)

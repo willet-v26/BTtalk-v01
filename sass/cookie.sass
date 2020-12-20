@@ -1,0 +1,42 @@
+#cookie-warn
+  width: 400px
+  z-index: 10
+  position: fixed
+  right: 0
+  bottom: 0px
+  background-color: $white
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5)
+  p
+    font-size: 12px
+    color: #f55339
+    width: auto
+    padding: 20px
+  a
+    color: #aaaaaa
+    float: right
+    font-size: 28px
+    font-weight: bold
+    line-height: 1
+    transform: scaleY(.8)
+    &:hover, &:focus
+      color: #000
+      text-decoration: none
+      cursor: pointer
+  .close, #close-cookie-warn
+    color: #f55339
+    font-size: 28px
+    font-weight: bold
+    padding: 0 20px
+    line-height: .1
+    position: absolute
+    right: -15px
+    bottom: 10px
+    &:hover, &:focus
+      color: #f55339
+      text-decoration: none
+      cursor: pointer
+
+@media screen and (max-width: 767px)
+  #cookie-warn
+    width: 100%
+    // margin: 0

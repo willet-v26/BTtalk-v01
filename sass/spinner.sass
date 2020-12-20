@@ -1,0 +1,32 @@
+// spinner no1
+.spinner-1
+  position: absolute
+  top: 8px
+  left: 138px
+  &:hover
+    // color: &blue
+  &:after, &:before
+    content: ""
+    display: block
+    width: 102px
+    height: 71px
+    border-radius: 6px
+
+.spinner-1:after
+  position: absolute
+  top: 77px
+  left: -4px
+  border: 11px solid transparent
+  border-color: $white
+  animation: pulse 5s linear infinite
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+    opacity: 1
+  10%
+    transform: scale(1.2)
+    opacity: .1
+  100%
+    transform: scale(1.2)
+    opacity: 0

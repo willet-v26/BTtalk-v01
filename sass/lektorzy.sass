@@ -1,0 +1,69 @@
+#lektorzy
+  height: 100vh
+
+#timeline.lektorzy
+  margin: 0px 0 0px 0px
+  border-right: 8px solid $white
+  border-left: 0px solid $white
+  height: 100%
+
+.l-1, .l-2, .l-3
+  margin-bottom: 20px
+  // border: 8px solid
+  p.lektorzy
+    // margin: 0 0 15px
+    text-align: justify
+    padding: 10px
+    font-size: 14px
+    transition: transform .5s
+    &:hover
+      transform: scale(1.05,1.07)
+      transition-timing-function: ease-out
+      transition-duration: 250ms
+      // background-color: $bg
+      -webkit-transform: scale(1.05,1.07)
+      -webkit-transition-timing-function: ease-out
+      -webkit-transition-duration: 250ms
+      -moz-transform: scale(1.05,1.07)
+      -moz-transition-timing-function: ease-out
+      -moz-transition-duration: 250ms
+    a
+      color: $blue
+
+h3#kreska
+  font-size: 3rem
+  font-weight: bold
+  padding-top: 100px
+
+// icona tymczasowa
+.icon-No-one-icon
+  height: 188px
+  width: 188px
+  margin-top: 3px
+  margin-left: 5px
+  border: 4px solid #eee9dc
+
+// @if $vertical
+@media screen and (max-width: 767px)
+  #lektorzy
+    height: 100%
+  .l-1, .l-2, .l-3
+    text-align: left
+    border: 0px
+    .hiding
+      display: none
+
+@media (max-width: 991px) and (min-width: 768px)
+  #lektorzy
+    height: 100%
+
+@media (max-width: 1199px) and (min-width: 992px)
+  #lektorzy
+    height: 100%
+
+@media screen and (max-width: 1200px)
+  #lektorzy
+    height: 100%
+  .l-1, .l-2, .l-3
+    .hiding
+      display: none

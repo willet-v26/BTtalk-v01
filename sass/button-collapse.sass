@@ -1,0 +1,73 @@
+.panel-default > .panel-heading
+  color: #333
+  background-color: #f5f5f5
+  border-color: #ddd
+  padding: 0
+
+.panel-body
+  a
+    color: $blue
+
+.btn-info
+  color: $bg
+  background-color: $white
+  border: 0
+  border-radius: 0
+  font-family: sans-serif
+  font-size: 16px
+  padding: 5px
+  width: 100%
+  text-align: left
+  &:active
+    color: $bg
+    background-color: $white
+    border-color: transparent
+  &:hover
+    color: $bg
+    background-color: $white
+    border-color: transparent
+  &:focus
+    color: $bg
+    background-color: $white
+    border-color: transparent
+  &:visited
+    color: $bg
+    background-color: $white
+    border-color: transparent
+// ***************************************
+// .btn-info
+//   &.active
+//     &.focus, &:focus, &:hover
+//       color: $bg
+//       background-color: $white
+//       border-color: $white
+//   &:active
+//     &.focus, &:focus, &:hover
+//       color: $bg
+//       background-color: $white
+//       border-color: $white
+//
+// .open > .dropdown-toggle.btn-info
+//   &.focus, &:focus, &:hover
+//     color: $bg
+//     background-color: $white
+//     border-color: $white
+
+// *****************************************
+.btn
+  &.active
+    &.focus, &:focus
+      outline: 0px auto -webkit-focus-ring-color
+      outline-offset: 0px
+  &.focus
+    outline: 0px auto -webkit-focus-ring-color
+    outline-offset: 0px
+    /* outline: 5px auto -webkit-focus-ring-color;
+    /* outline-offset: -2px;
+  &:active
+    &.focus, &:focus
+      outline: 0px auto -webkit-focus-ring-color
+      outline-offset: 0px
+  &:focus
+    outline: 0px auto -webkit-focus-ring-color
+    outline-offset: 0px

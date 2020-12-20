@@ -1,0 +1,111 @@
+#plan-zajec
+  height: 100vh
+// *************************************
+// Plan zajeć
+// *************************************
+.obrysTablicy
+  border: 8px solid $white
+  margin-bottom: 30px
+  margin-top: 63px
+  padding: 3px
+  // background-color: #f5deb329
+  background-color: #5d5b5b
+  h3
+    margin-top: 10px
+
+// *************************************
+// Tabele
+// *************************************
+table.plan-z
+  border: 1px solid $white
+  width: 100%
+  table-layout: fixed
+  text-align: center
+  border-radius: 0px
+  transition: inherit
+  margin-bottom: 0px
+  background-color: transparent
+  box-shadow: none
+  border-spacing: 2px
+  border-collapse: collapse
+  td
+    border-left: 1px solid $white
+    // height: 120px
+  &:hover
+    box-shadow: none
+  p
+    text-align: center
+
+// globalne, lacznie z cenami
+th, td
+  border-left: 1px solid
+  color: $white
+  text-align: center
+
+tr
+  border-bottom: 1px solid $white
+
+thead, tbody
+
+p.uwaga
+  font-size: 14px
+  line-height: 1
+  margin-top: 6px
+  margin-bottom: 12px
+
+p.uwaga2
+  font-size: 14px
+  line-height: 1
+  margin-top: 6px
+  display: none
+
+// zapisy ruszyly
+p.z-ruszyly
+  transform: rotate(15deg)
+  font-weight: bold
+  font-size: 20px
+  position: relative
+  color: rgb(142, 142, 142)
+  text-align: center
+  display: inline-block
+  width: 155px
+  right: 10px
+  border: 2px solid
+  border-radius: 5px
+
+// @media screen and (max-width: 414px)
+
+@media screen and (max-width: 767px)
+  #plan-zajec
+    height: 100%
+  p.z-ruszyly
+    font-size: 15px
+    // right: 65px
+  .hide-text
+    display: none
+  p.uwaga2
+    display: inline
+
+@media (max-width: 991px) and (min-width: 768px)
+  #plan-zajec
+    height: 100%
+  p
+    .uwaga2
+      display: none
+
+@media (max-width: 1199px) and (min-width: 992px)
+  #plan-zajec
+    height: 100%
+  p
+    .uwaga2
+      display: none
+
+@media (min-width: 1200px)
+  #plan-zajec
+    height: 100vh
+  p
+    .uwaga2
+      display: none
+  table-responsive
+    .ukryty-text
+      display: none
